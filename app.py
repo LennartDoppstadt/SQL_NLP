@@ -81,14 +81,27 @@ with st.sidebar.expander("User Guide", expanded=False):
     st.markdown("""
     ### How to Use This App
 
-    **1. Upload CSV**: Load your own data and convert it into a SQL database.
+    **Upload CSV**  
+    - Upload your own CSV file.  
+    - Name the table and save it to the database.  
+    - Replaces any previously uploaded tables.  
 
-    **2. Overview**: View structure and stats of the database.
+    **Overview**  
+    - View all tables in the database.  
+    - Check each table’s schema and statistics.  
+    - Visualize distributions of numerical columns.  
 
-    **3. Query**: Ask questions in natural language.
+    **Query**  
+    - Ask questions using natural language.  
+    - Automatically generate and run SQL queries.  
+    - View, refine, and reset your queries.  
+    - Download results as CSV.  
 
-    **4. History**: See your last 10 queries.
+    **History**  
+    - Review your last 10 queries.  
+    - See the SQL used and the results for each.  
     """)
+
 
 def wipe_all_tables(conn):
     cur = conn.cursor()
